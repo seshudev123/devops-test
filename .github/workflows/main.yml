@@ -35,7 +35,7 @@ jobs:
           context: .
           file: Dockerfile.backend
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mean-backend:latest
+          tags: seshudev123/mean-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v4
@@ -43,4 +43,4 @@ jobs:
           context: .
           file: Dockerfile.frontend
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mean-frontend:latest
+          tags: seshudev123/mean-frontend:latest
