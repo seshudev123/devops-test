@@ -35,7 +35,7 @@ jobs:
           context: .
           file: backend/Dockerfile.backend
           push: true
-          tags: seshudev123/mean-backend:latest
+          tags: techhubdevops/my-docker:backend-latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v4
@@ -43,4 +43,4 @@ jobs:
           context: .
           file: frontend/Dockerfile.frontend
           push: true
-          tags: seshudev123/mean-frontend:latest
+          tags: techhubdevops/my-docker:frontend-latest
